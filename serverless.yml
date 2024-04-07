@@ -20,8 +20,8 @@ service: daily-til
 # frameworkVersion: "=X.X.X"
 
 provider:
-  name: aws
-  runtime: nodejs10.x
+    name: aws
+    runtime: nodejs20.x
 
 # you can overwrite defaults here
 #  stage: dev
@@ -57,8 +57,8 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+    hello:
+        handler: handler.hello
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
